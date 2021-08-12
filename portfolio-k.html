@@ -2,30 +2,46 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css" />
-    <link rel="stylesheet" media="screeb and (max-width:530px)" href="phone.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:800px)"
+      href="tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screeb and (max-width:530px)"
+      href="phone.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <title>Kunjan Dutiya</title>
   </head>
-  
+
   <body>
     <div class="container">
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li><a class="active" href="#About">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contactme"> Contact me</a></li>
-          </ul>
-        </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#About" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contactme">Contact me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
       <div class="content">
         <h1 class="heading">I'm Kunjan Dutiya</h1>
@@ -36,7 +52,7 @@
           to grasp things soon ..
         </p>
       </div>
-      <img src="kunjan.jpg" class="image" style="width: 30%;"/>
+      <img src="kunjan.jpg" class="image" style="width: 30%" />
       <div class="social-links">
         <a
           href="https://www.facebook.com/profile.php?id=100008172554060"
@@ -47,7 +63,6 @@
           >INSTAGRAM</a
         >
         <a href="https://www.linkedin.com/in/kunjandutiya">LINKEDIN</a>
-        
       </div>
     </div>
     <section id="skills">
@@ -133,23 +148,18 @@
           <p>New York</p>
         </div>
       </div>
-    
- 
-        <footer>
-          <!-- <div class="social">
+    </section>
+    <!-- <div class="social">
             <a href="https://www.facebook.com/profile.php?id=100008172554060"
             target="blank" class="fa fa-facebook"></a>
 
             <a href="https://www.linkedin.com/in/kunjandutiya" class="fa fa-linkedin"></a>
             <a href="https://www.instagram.com/kunjandutiya_309/" target="blank" class="fa fa-instagram"></a>
           </div> -->
-        <div class="arrow">
-          <a href="#" id="toTop" style="display:block ;"><span id="toTopHover" style="opacity:1"></span>
-            
-          </a>
-        </div>
-        </footer>
-      </div>
-      </section>
+    <div class="arrow">
+      <a href="#" id="toTop" style="display: block"
+        ><span id="toTopHover" style="opacity: 1"></span>
+      </a>
+    </div>
   </body>
 </html>
